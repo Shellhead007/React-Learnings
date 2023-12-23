@@ -6,9 +6,9 @@
   "name": "react",
   "description": "This is first react learning by Abhimanyu Sharma",
   "version": "1.0.0",
-  "main": "App.js",
   "devDependencies": {
-    "parcel": "^2.10.3"
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
   },
   "scripts": {
     "test": "jest"
