@@ -2,5 +2,28 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "name": "react",
+  "description": "This is first react learning by Abhimanyu Sharma",
+  "version": "1.0.0",
+  "main": "App.js",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shellhead007/React-Learnings.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Abhimanyu Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shellhead007/React-Learnings/issues"
+  },
+  "homepage": "https://github.com/Shellhead007/React-Learnings#readme"
 }
