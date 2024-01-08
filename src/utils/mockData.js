@@ -1,28 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-// header component
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          src="https://thumbs.dreamstime.com/b/food-delivery-logo-template-vector-icon-illustration-170869600.jpg"
-        />
-      </div>
-      <div className="nav-items">
-        <ul className="list">
-          <li>Home</li>
-          <li>About us</li>
-          <li>Contact us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
 const resList = [
   {
     info: {
@@ -1427,52 +1402,4 @@ const resList = [
   },
 ];
 
-// Restraunt card component
-const RestrauntCard = (props) => {
-  const { resData } = props;
-  const { cloudinaryImageId, name, cuisines, avgRating, sla, costForTwo } =
-    resData?.info;
-  return (
-    <div className="res-card">
-      <img
-        className="res-logo"
-        alt="res-logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
-          cloudinaryImageId
-        }
-      />
-      <h3>{name}</h3>
-      <h4>{cuisines.join(", ")}</h4>
-      <h4>{avgRating}</h4>
-      <h4>{sla.slaString}</h4>
-      <h4>{costForTwo}</h4>
-    </div>
-  );
-};
-// Body component
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search">Search: ToDO</div>
-      <div className="res-container">
-        {resList.map((restraunt) => (
-          <RestrauntCard resData={restraunt} key={restraunt.info.id} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-// app level component
-const AppComponent = () => {
-  return (
-    <div className="app">
-      {<Header />}
-      {<Body />}
-    </div>
-  );
-};
-
-const reactRoot = ReactDOM.createRoot(document.getElementById("root"));
-reactRoot.render(<AppComponent />);
+export default resList;
